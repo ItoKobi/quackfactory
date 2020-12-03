@@ -1,7 +1,7 @@
 from discord import Intents
 
 def get_intents() -> Intents:
-  intents = Intents.default()
+  intents = Intents.all()
   intents.reactions = True
   intents.members = True
   return intents
