@@ -20,7 +20,7 @@ async def on_voice_state_update(member, before, after):
 
         for member in guild.members:
             for role in member.roles:
-                if role.name == "Test": # Rubberduck role idk why but it doesnt work using a variable ;(
+                if role.name == "Test": # Rubberduck role idk why but it doesnt work using a variable 
                     if str(member.status) == "online" or member.status == discord.Status.online:
                         await member.send(message)
 
