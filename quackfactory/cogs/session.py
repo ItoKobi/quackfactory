@@ -8,10 +8,10 @@ class Session(commands.Cog):
 async def on_voice_state_update(member, before, after):
 
     guild = member.guild
-    role = "Test"
+    role = "Test" # Rubber Duck Role
     everyone = "@everyone" 
-    channel_id = 756574459556659323
-    message = f"Hey there! {member} needs a rubber duck!"
+    channel_id = 756574459556659323 # Voice chat's channel ID
+    message = f"Hey there! {member} needs a rubber duck!" # Message sent to rubberduck.
 
     if after.channel.id == channel_id:
         await after.channel.set_permissions(discord.utils.get(guild.roles, name=role), connect=True)
